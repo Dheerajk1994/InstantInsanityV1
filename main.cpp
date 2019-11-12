@@ -37,7 +37,7 @@ bool solvePuzzle(std::vector<Cube>& cubeVector, std::vector<int>& colorCountVect
 			colorCountVector.at(cube.oppPair2.side2 - 1) -= 1;
 		}
 	}
-	if (!cube.oppPair2.marked) {
+	if (!cube.oppPair3.marked) {
 		if (colorCountVector.at(cube.oppPair3.side1 - 1) < 2 && colorCountVector.at(cube.oppPair3.side2 - 1) < 2) {
 			colorCountVector.at(cube.oppPair3.side1 - 1) += 1;
 			colorCountVector.at(cube.oppPair3.side2 - 1) += 1;
